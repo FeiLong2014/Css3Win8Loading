@@ -1,0 +1,88 @@
+<html>
+<head>
+    <title>Win8 Loading</title>
+    <style>
+        .spinner {
+            margin: 100px auto 0;
+            width: 600px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+            .spinner > div {
+                width: 6px;
+                height: 6px;
+                background-color: #60B8F7;
+                border-radius: 100%;
+                display: inline-block;
+                -webkit-animation: bouncedelay 4s infinite linear;
+                animation: bouncedelay 4s infinite linear;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+            }
+
+            .spinner .bounce1 {
+                -webkit-animation-delay: 0.8s;
+                animation-delay: 0.8s;
+            }
+
+            .spinner .bounce2 {
+                -webkit-animation-delay: 0.6s;
+                animation-delay: 0.6s;
+            }
+            .spinner .bounce3 {
+                -webkit-animation-delay: 0.4s;
+                animation-delay: 0.4s;
+            }
+            .spinner .bounce4 {
+                -webkit-animation-delay: 0.2s;
+                animation-delay: 0.2s;
+            }
+
+        @-webkit-keyframes bouncedelay {
+            0% {
+                -webkit-transform: translate(-400px,0px);
+            }
+            15% {
+                -webkit-transform: translate(-80px,0px);
+            }
+            60% {
+                -webkit-transform: translate(80px,0px);
+            }
+            75% {
+                -webkit-transform: translate(400px,0px);
+            }
+            100% {
+                -webkit-transform: translate(400px,0px);
+            }
+        }
+
+        @keyframes bouncedelay {
+            0% {
+                transform: translate(-400px,0px);
+            }
+            15% {
+                transform: translate(-80px,0px);
+            }
+            60% {
+                transform: translate(80px,0px);
+            }
+            75% {
+                transform: translate(400px,0px);
+            }
+            100% {
+                transform: translate(400px,0px);
+            }
+        }
+    </style>
+</head>
+<body>
+	<div class="spinner">
+		<div class="bounce1"></div>
+		<div class="bounce2"></div>
+		<div class="bounce3"></div>
+		<div class="bounce4"></div>
+		<div class="bounce5"></div>
+	</div>
+</body>
+</html>
